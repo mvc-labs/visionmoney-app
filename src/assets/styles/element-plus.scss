@@ -1,0 +1,801 @@
+// @import './var.scss';
+
+// :root {
+//     --el-dialog-bg-color: var(--themeBgSecondColor);
+//     --el-border-radius-base: 8px;
+//     --el-font-size-large: 20px;
+//     --el-border-color: var(--faded-border-color);
+//     --el-border-width: var(--standard-border-width);
+//     // --el-color-primary: #FFDC51;
+//     --el-color-primary-light-5: rgba(255, 220, 81, 0.5);
+//     --el-color-primary-light-4: rgba(255, 220, 81, 0.4);
+//     --el-color-primary-light-3: rgba(255, 220, 81, 0.3);
+//     --el-color-primary-light-2: rgba(255, 220, 81, 0.2);
+//     --el-color-primary-light-1: rgba(255, 220, 81, 0.1);
+//     --el-border-radius-sm: 2px;
+//     --el-border-radius-big: 12px;
+//     --el-fill-color-blank: var(--themeBgColor);
+//     --el-bg-color-overlay: var(--themeBgSecondColor);
+//     --el-input-border-radius: var(--el-border-radius-big);
+
+// }
+
+// html.dark {
+//     --el-bg-color: var(--themeBgSecondColor);
+//     --el-text-color-regular: #fff;
+//     --el-border-color: var(--faded-border-color) --el-color-primary: #FFDC51;
+//     --el-color-primary-light-5: rgba(255, 220, 81, 0.5);
+//     --el-color-primary-light-4: rgba(255, 220, 81, 0.4);
+//     --el-color-primary-light-3: rgba(255, 220, 81, 0.3);
+//     --el-color-primary-light-2: rgba(255, 220, 81, 0.2);
+//     --el-color-primary-light-1: rgba(255, 220, 81, 0.1);
+//     --el-fill-color-blank: var(--themeBgColor);
+//     --el-bg-color-overlay: var(--themeBgSecondColor);
+// }
+
+
+// .el-overlay,
+// .el-overlay-dialog,
+// .el-loading-mask {
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .el-switch__core{
+//     border:2PX solid #303133 !important;
+//      width: 22px !important;
+//     height: 22px !important;
+// }
+
+// .el-switch__action{
+//      border:2PX solid #303133 !important;
+//     width: 15px !important;
+//     height: 15px !important;
+// }
+
+
+// .nft-tab-wrap{
+//             .el-tabs__item{
+//             color: var(--color-tab) !important;
+//             font-size: 16px !important;
+//             font-weight: 400 !important;
+//             width: 80%;
+//             text-align: center;
+//             margin-bottom: 10px;
+           
+//             }
+//             .el-tabs__active-bar{
+//                 height: 3px;
+//             }
+//             .el-tabs__nav-wrap::after{
+//                 height: 3px;
+//             }
+// }
+
+
+
+// .el-button {
+//     --el-button-text-color: var(--themeTextColor);
+//     --el-button-hover-text-color: var(--themeTextColor);
+//     --el-button-hover-bg-color: transparent;
+//     --el-button-active-border-color: var(--border-color);
+//     --el-button-hover-border-color: var(--border-color);
+//     --el-button-active-color: var(--el-color-primary);
+//     border: var(--standard-border-width) solid var(--border-color);
+//     padding: 12px 20px;
+
+
+
+
+
+//     .el-loading-mask {
+//         .el-loading-spinner {
+//             top: 0;
+//             left: 0;
+//             height: 100%;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+
+//             .circular {
+//                 width: 30px;
+//                 height: 30px;
+//             }
+//         }
+//     }
+
+//     &.el-button--sm {
+//         height: 26px;
+//         font-size: 12px;
+//         border-radius: 4px;
+
+//         .el-loading-mask {
+//             .el-loading-spinner {
+//                 .circular {
+//                     width: 20px;
+//                     height: 20px;
+//                 }
+//             }
+//         }
+//     }
+
+//     &.el-button--large {
+//         height: 60px;
+//         font-size: 20px;
+//     }
+
+//     &.el-button--primary {
+//         --el-button-active-border-color: var(--primary-border-color);
+//         --el-button-hover-border-color: var(--primary-border-color);
+//     }
+
+//     &.is-disabled {
+//         border-color: var(--el-border-color) !important;
+//         background: var(--el-border-color) !important;
+//         color: var(--themeBgColor) !important;
+
+//     }
+
+//     &.none-box-shadow {
+//         box-shadow: none
+//     }
+
+
+// }
+
+
+// .el-select {}
+
+// .el-input {
+//     --el-input-focus-border: transparent;
+//     --el-input-focus-border-color: transparent;
+//     padding: 0;
+//     transition: all 0.5;
+//     box-shadow: 3px 3px 0 var(--faded-border-color);
+//     border: var(--el-border-width) solid var(--faded-border-color);
+//     border-radius: var(--el-input-border-radius);
+
+
+//     .el-input__wrapper {
+//         box-shadow: none;
+//         border: none;
+
+//         .el-input__inner {
+//             --el-input-hover-border: var(--normal-border-color);
+//             --el-input-focus-border-color: var(--normal-border-color);
+//             --el-input-height: var(--input-height);
+//             --el-input-border-radius: var(--el-border-radius-big);
+//             min-height: var(--el-input-inner-height);
+//             outline: none;
+//         }
+//     }
+
+//     .el-input-group__append {
+//         box-shadow: none;
+//         border: none;
+
+
+//         .el-select,
+//         .el-input {
+//             box-shadow: none;
+//             border: none;
+//         }
+
+//     }
+// }
+
+
+
+
+
+// .el-date-editor {
+//     --el-input-height: var(--input-height);
+//     border-radius: var(--el-input-border-radius);
+//     transition: all 0.5;
+//     border: var(--el-border-width) solid var(--faded-border-color) !important;
+//     box-shadow: 3px 3px 0 var(--faded-border-color) !important;
+
+//     .el-input__wrapper {
+//         width: 100%;
+//     }
+
+//     &.is-active {
+//         border-color: var(--themeTextColor) !important;
+//         box-shadow: 3px 3px 0 var(--themeTextColor) !important;
+//     }
+
+// }
+
+
+
+// .el-textarea {
+//     .el-textarea__inner {
+//         border-radius: var(--el-input-border-radius);
+//         transition: all 0.5;
+//         border: var(--el-border-width) solid var(--faded-border-color) !important;
+//         box-shadow: 3px 3px 0 var(--faded-border-color) !important;
+
+//         &:focus,
+//         &:not(:placeholder-shown) {
+//             border-color: var(--themeTextColor) !important;
+//             box-shadow: 3px 3px 0 var(--themeTextColor) !important;
+//         }
+//     }
+
+// }
+
+
+
+// .el-form-item {
+
+
+//     &.is-error {
+//         .el-input {
+//             box-shadow: 3px 3px 0 var(--color-error);
+//             border-color: var(--color-error);
+
+//             .el-input__wrapper {
+//                 border: none;
+//                 box-shadow: none;
+//             }
+
+//             .el-input-group__append {
+
+//                 .el-select,
+//                 .el-input {
+//                     box-shadow: none;
+//                     border: none;
+//                 }
+
+//             }
+
+//         }
+
+//         .el-date-editor {
+//             box-shadow: 3px 3px 0 var(--color-error) !important;
+//             border-color: var(--color-error) !important;
+//         }
+
+//     }
+
+//     &.is-success {
+//         .el-input {
+//             box-shadow: 3px 3px 0 var(--themeTextColor);
+//             border-color: var(--themeTextColor);
+
+//             .el-input__wrapper {
+//                 box-shadow: none;
+//                 border-color: none;
+//             }
+
+//             .el-input-group__append {
+//                 box-shadow: none;
+//                 border-color: none;
+
+//                 .el-select {
+//                     box-shadow: none;
+//                     border: none;
+//                 }
+
+//                 .el-input {
+//                     box-shadow: none;
+//                     border: none;
+//                 }
+
+//             }
+//         }
+
+//         .el-date-editor {
+//             box-shadow: 3px 3px 0 var(--themeTextColor) !important;
+//             border-color: var(--themeTextColor) !important;
+//         }
+//     }
+// }
+
+// .el-form-item__content {
+//     display: block;
+// }
+
+// .el-form-item__error {
+//     margin: 5px;
+//     position: static;
+// }
+
+
+
+
+
+
+// .el-dialog {
+//     --el-dialog-width: 912px;
+//     --el-dialog-border-radius: 24px;
+//     --el-dialog-padding-primary: 30px;
+//     position: relative;
+//     box-sizing: border-box;
+//     // border-width: var(--el-border-width);
+//     // border: var(--el-border);
+//     border-color: var(--el-button-hover-border-color);
+
+//     &.sm {
+//         --el-dialog-width: 456px;
+//     }
+
+//     &.none-bg-color {
+//         --el-dialog-bg-color: transparent;
+//         box-shadow: none;
+//     }
+
+
+
+//     &.none-header {
+//         .el-dialog__header {
+//             display: none;
+//         }
+//     }
+
+
+
+//     // box-shadow: 0px 10px 20px 0px rgba(232, 232, 232, 0.5);
+
+//     // &::after {
+//     //     content: '';
+//     //     width: calc(100% + var(--el-border-width) + var(--el-border-width));
+//     //     height: 14px;
+//     //     box-sizing: border-box;
+//     //     background: var(--el-color-primary);
+//     //     border-radius: 0 0 var(--el-border-radius-base) var(--el-border-radius-base);
+//     //     position: absolute;
+//     //     left: 0;
+//     //     bottom: 0;
+//     //     margin-left: -2px;
+//     //     margin-bottom: -12px;
+//     //     border-width: var(--el-border-width);
+//     //     border: var(--el-border);
+//     //     border-color: var(--el-button-hover-border-color);
+//     //     z-index: -1;
+//     // }
+
+//     &.reactive {
+//         position: relative;
+//     }
+
+//     .el-dialog__header {
+//         height: 84px;
+//         display: flex;
+//         align-items: center;
+//         padding: 0 var(--el-dialog-padding-primary);
+//         position: relative;
+//         margin-right: 0;
+//     }
+
+//     .el-dialog__body {
+//         color: var(--themeTextColor);
+//         padding: 10px 30px 30px 30px;
+//     }
+
+//     .el-dialog__headerbtn {
+//         width: 34px;
+//         height: 34px;
+//         border-radius: 50%;
+//         background: var(--faded-border-color);
+//         top: 50%;
+//         margin-top: -17px;
+//         right: 0;
+//         margin-right: 30px;
+
+//         .el-dialog__close {
+//             color: var(--themeTextColor);
+//         }
+
+//         &:hover {
+//             background: var(--themeTextColor);
+
+//             .el-dialog__close {
+//                 color: var(--themeBgColor);
+//             }
+//         }
+
+//     }
+
+//     &.none-padding {
+//         .el-dialog__body {
+//             padding: 0;
+//         }
+
+//     }
+
+//     .el-loading-mask {}
+
+//     &.metaname {
+//         --el-dialog-border-radius: 12px;
+//         --el-dialog-width: 600PX;
+
+//         .el-dialog__header {
+//             background: linear-gradient(99deg, #5721A1 0%, #2FE3D6 99%);
+//             border-radius: 12px 12px 0 0;
+//             height: 107px;
+
+//             .el-dialog__title {
+//                 color: #fff;
+//                 font-size: 24px;
+//                 margin-right: 50px;
+//             }
+
+//             .el-dialog__headerbtn {
+//                 background: transparent;
+
+//                 .el-dialog__close {
+//                     color: #fff;
+//                     width: 16px;
+//                     height: 16px;
+//                 }
+//             }
+//         }
+
+//         .el-dialog__body {
+//             padding: 24px;
+//         }
+//     }
+// }
+
+// .el-message-box__errormsg {
+//     margin-top: 10px;
+// }
+
+// @media only screen and (max-width: 750PX) {
+//     .el-dialog {
+//         --el-dialog-border-radius: 12px;
+//         width: 95%;
+
+//         .el-dialog__body {
+//             padding: 20px;
+//         }
+//     }
+
+// }
+
+// .el-container {
+//     margin-top: 9PX !important;
+//     width: 70%;
+//     margin: 0 auto;
+
+//     .el-aside {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         height: 90vh;
+
+
+//     }
+
+//     @media screen and (max-width:750PX) {
+//         .el-aside {
+//             display: none;
+//         }
+//     }
+// }
+
+// // .el-dropdown-menu {
+// //     background-color: var(--themeBgSecondColor) !important;
+// //     border-radius: 12px;
+// //     box-sizing: border-box;
+// //     box-shadow: var(--el-box-shadow-dark);
+// //     border: none;
+// //     padding: 0 !important;
+
+// //     .el-dropdown-menu__item {
+// //         display: block;
+
+// //         &:first-child {
+// //             border-radius: 12px 12px 0 0;
+// //             overflow: hidden;
+// //         }
+
+// //         &:last-child {
+// //             border-radius: 0 0 12px 12px;
+// //             overflow: hidden;
+// //         }
+
+// //         padding: 0;
+// //     }
+// // }
+
+// //   .el-dropdown-menu__item {
+
+// //        font-size: 20px !important;
+// //       padding:8px 25px !important;
+// //     }
+
+
+// .el-dropdown-menu__item:not(.is-disabled):hover,
+// .el-dropdown-menu__item:focus {
+//     background-color: var(--el-color-primary-light-3) !important;
+//     color: var(--themeTextColor) !important;
+// }
+
+// .custom-select {
+//     .el-select-dropdown__item {
+//         height: auto;
+//         line-height: auto;
+//     }
+// }
+
+
+
+
+
+// .el-popper {
+//     --el-popper-border-radius: 12px;
+//     background: #fff;
+// }
+
+
+// .el-drawer {
+//     .el-drawer__header {
+//         .el-drawer__title {
+//             font-size: 18px;
+//             color: var(--themeTextColor);
+//         }
+//     }
+
+//     // &.buzz {
+//     //     width: 600px;
+//     //     left: 50%;
+
+//     //     .el-drawer__body {
+//     //         background: var(--themeBgColor);
+//     //         border-radius: 12px 12px 0 0;
+//     //         box-shadow: var(--el-box-shadow-dark);
+//     //         padding: 15px;
+//     //         box-sizing: border-box;
+
+//     //         @media only screen and (max-width: 1024PX) {
+//     //             padding: 30px;
+//     //         }
+//     //     }
+
+//     //     // width: 608px;
+//     //     // left: 50%;
+//     //     // margin-left: -(calc(608px / 2 - 90px));
+//     //     // border-radius: 12px 12px 0 0;
+//     //     // height: auto !important;
+//     //     // padding: 15px;
+//     //     // box-sizing: border-box;
+//     // }
+
+//     &.none-padding {
+//         .el-drawer__body {
+//             padding: 0;
+//         }
+//     }
+
+//     &.btt {
+//         left: 50%;
+//         width: 600PX;
+//         margin: 0 auto;
+//         border-radius: 12px 12px 0 0;
+//         margin-left: -(calc((600PX - 90PX) / 2));
+//         height: auto !important;
+
+//         @media only screen and (max-width: 1024PX) {
+//             width: 100%;
+//             padding-left: 0;
+//             left: 0;
+//             margin-left: 0;
+//         }
+//     }
+// }
+
+// .el-skeleton__item {
+//     border-radius: 4px;
+
+//     &.el-skeleton__circle {
+//         border-radius: 50%;
+//     }
+// }
+
+// .el-loading-mask {
+
+//     .el-loading-spinner {
+//         top: 0;
+//         height: 100%;
+//         width: 100%;
+//         left: 0;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-direction: column;
+
+//         .el-loading-text {
+//             color: var(--themeTextColor);
+//             font-weight: 700;
+//             text-shadow: 1px 1px var(--themeBgColor);
+//         }
+//     }
+// }
+
+// @media screen and (max-width:980PX) {
+//     .el-container {
+//         width: 98%;
+//     }
+// }
+
+// .el-collapse-item__header {
+//     border-bottom: none;
+
+//     .el-icon {
+//         display: none;
+//     }
+
+
+// }
+
+
+// // .el-collapse-item__header.is-active{
+// //     color: #FC6D5E;
+// // }
+// .el-collapse-item__wrap {
+//     border-bottom: none;
+
+//     .el-icon {
+//         display: none;
+//     }
+// }
+
+// .el-collapse {
+//     --el-collapse-border-color: var(--faded-border-color);
+// }
+
+// .el-carousel__arrow i {
+//     font-size: 20PX !important;
+
+//     color: #3D3D3D !important;
+// }
+
+// .el-carousel__arrow {
+//     border: 3px solid #3D3D3D !important;
+//     font-weight: bold !important;
+//     padding: 29px !important;
+//     border-radius: 12px !important;
+//     background: var(--el-color-primary) !important;
+
+//     .dark &.primary {
+//         --border-color: var(--primary-border-color);
+//         color: var(--normal-border-color);
+//     }
+
+//     // 褪色边框
+//     &.faded {
+//         --border-color: var(--faded-border-color);
+//         background: #EDEFF2;
+//     }
+
+//     &.faded-switch:not(:active, :hover):placeholder-shown {
+//         --border-color: var(--faded-border-color);
+//     }
+
+//     &.small {
+//         --standard-offset: 2PX;
+//         --standard-border-width: 1PX;
+//     }
+
+
+//     // 只有下阴影的情况
+//     &.only-bottom {
+//         --right-offset: 0PX;
+//     }
+
+//     border: var(--standard-border-width) solid var(--border-color);
+//     box-shadow: var(--right-offset) var(--standard-offset) 0 var(--border-color);
+//     border-radius: var(--el-input-border-radius);
+//     transition-property: all;
+//     transition-duration: 150ms;
+
+//     &.disabled {
+//         cursor: not-allowed;
+
+//         @media (min-width: 1024PX) {
+//             &:hover:not(:active) {
+//                 box-shadow: var(--right-offset) var(--standard-offset) 0 var(--border-color);
+//                 transform: none;
+//             }
+
+//             &:active {
+//                 box-shadow: var(--right-offset) var(--standard-offset) 0 var(--border-color);
+//                 transform: none;
+//             }
+//         }
+//     }
+// }
+
+// .el-carousel__item {
+//     padding: 0 150px !important;
+//     display: flex !important;
+//     flex-direction: row !important;
+//     align-items: center;
+// }
+
+// .el-carousel__indicator.el-carousel__indicator--horizontal.is-active {
+//     .el-carousel__button {
+//         opacity: 1;
+//         background: var(--el-color-primary) !important;
+
+//         // 褪色边框
+//         &.faded {
+//             --border-color: var(--faded-border-color);
+//             background: #EDEFF2;
+//         }
+
+//         &.faded-switch:not(:active, :hover):placeholder-shown {
+//             --border-color: var(--faded-border-color);
+//         }
+
+//         &.small {
+//             --standard-offset: 2PX;
+//             --standard-border-width: 1PX;
+//         }
+
+
+//         // 只有下阴影的情况
+//         &.only-bottom {
+//             --right-offset: 0PX;
+//         }
+
+//         border: var(--standard-border-width) solid var(--border-color);
+//         box-shadow: var(--right-offset) var(--standard-offset) 0 var(--border-color);
+//         border-radius: var(--el-input-border-radius);
+//         transition-property: all;
+//         transition-duration: 150ms;
+
+//         &.disabled {
+//             cursor: not-allowed;
+
+//             @media (min-width: 1024PX) {
+//                 &:hover:not(:active) {
+//                     box-shadow: var(--right-offset) var(--standard-offset) 0 var(--border-color);
+//                     transform: none;
+//                 }
+
+//                 &:active {
+//                     box-shadow: var(--right-offset) var(--standard-offset) 0 var(--border-color);
+//                     transform: none;
+//                 }
+//             }
+
+//         }
+//     }
+// }
+
+// .el-carousel__indicator.el-carousel__indicator--horizontal {
+
+//     .el-carousel__button {
+//         font-weight: 500;
+//         border-radius: 12px !important;
+//         opacity: 1;
+//         border: var(--standard-border-width) solid #3D3D3D !important;
+//         padding: 18px 25px !important;
+//         background: #fff;
+
+//         .dark &.primary {
+//             --border-color: var(--primary-border-color);
+//             color: var(--normal-border-color);
+
+//         }
+//     }
+// }
+
+// .el-carousel__container {
+//     height: 800px !important;
+
+// }
+
+// .el-popover {
+//     --el-popover-border-radius: var(--el-input-border-radius) !important;
+// }
+
+
+// .el-affix--fixed {
+//     position: fixed;
+// }

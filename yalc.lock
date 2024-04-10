@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "request-sdk": {
+      "signature": "bafa3b957f8ecf899b649049ebbb4094",
+      "file": true,
+      "replaced": "^0.5.0"
+    }
+  }
+}

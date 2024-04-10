@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *;
+   img-src * 'self' data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+   style-src  'self' 'unsafe-inline' *"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-store" />
+    <meta http-equiv="Cache-control" content="no-store" />
+    <meta http-equiv="Cache" content="no-store" />
+    <title>VisionMoney</title>
+    <script src="/rem.js"></script>
+    <script>
+      rem(document, window, parseFloat('<% VITE_Design_Size />'), 100)
+    </script>
+
+    <script>
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+
+      // 计算屏幕宽度
+      function calculateVh() {
+        var vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', vh + 'px')
+      }
+
+      // Initial calculation
+      calculateVh()
+
+      // Re-calculate on resize
+      window.addEventListener('resize', calculateVh)
+
+      // Re-calculate on device orientation change
+      window.addEventListener('orientationchange', calculateVh)
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
